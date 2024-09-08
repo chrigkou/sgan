@@ -36,7 +36,7 @@ modified accordingly.
 
 ## Licence
 
-This project is licensed under the MIT License - see the [LICENSE]() file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/chrigkou/sgan/blob/main/LICENSE) file for details
 
 ## References
 1. Jack, K.; William, K. The UK-DALE dataset domestic appliance-level electricity demand and whole-house demand from five UK
