@@ -46,6 +46,21 @@ It should be noted that the data have to be downloaded manually.
 In order to load the data, the files _path_manager.py_ and _datasource.py_ inside _datasources/_ directory should be 
 modified accordingly.
 
+## Run the project and train the models
+
+In order to run the whole project and train the GAN, you should first obtain and store the data from one of the mentioned datasets.
+Run the Notebook data_preprocess.ipynb first, to perform the first processing on the data of the chosen appliance. Set the paths on your computer, to save and load files appropriately.
+After running the first notebook a pickle file will be created with the processed data.
+
+The next step is to run the clean_dataset.ipynb file. This will read the pre processed data and performa the signature isolation and final cleaning of the data. Some plots and prints
+are left in the code for debuggin purposes and to illustrate the process more clearly. After running this, the final signatures timeseries will be saved in pickle files.
+
+Finally the last file sgan_train contains the main training loop and architectures of the models, as well the creation of the final timeseries. 
+
+Please note that wandb is used in the final file for data visualization and keeping important information regarding the models and train process. If you do not wish to use it, you should 
+remove it from the code.
+
+
 ## Licence
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/chrigkou/sgan/blob/main/LICENSE) file for details
@@ -56,4 +71,5 @@ homes. Sci. Data 2015, 2, 150007.
 2. Firth, S.; Kane, T.; Dimitriou, V.; Hassan, T.; Fouchal, F.; Coleman, M.; Webb, L. REFIT Smart Home dataset, 2017.
 doi:10.17028/rd.lboro.2070091.v1.
 3. Parson, Oliver, et al. "Dataport and NILMTK: A building data set designed for non-intrusive load monitoring." 2015 ieee global conference on signal and information processing (globalsip). IEEE, 2015.
+
 
