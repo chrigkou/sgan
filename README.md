@@ -27,6 +27,18 @@ In case you use SGAN to conduct research, please consider to cite our paper:
     
 For any enquiries, please contact the main authors.
 
+## Library versions used
+
+| Package    | Version |
+| -------- | ------- |
+| torch  | 2.0.1     |
+| pandas | 1.5.3     |
+| numpy    | 1.23.5   |
+| matplotlib    | 3.7.1    |
+| torchvision    | 0.15.2    |
+| torchsummary    | 1.5.1    |
+| wandb    | 0.15.10    |
+
 ## Datasets
 
 The selected datasets include **UK DALE**[1], **REFIT**[2] and **Pecan Street**[3]
